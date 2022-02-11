@@ -3,27 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>tienda en linea</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <!-- navbar con boton de busqueda -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">E-commerce</a>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="text"
+              id="Buscar"
+              name="texto"
+              placeholder="Buscar"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <!-- tabla de productos y categorias -->
+    <table>
+      <thead>
+        <th>id</th>
+        <th>name</th>
+        <th>url_imagen</th>
+        <th>price</th>
+        <th>discount</th>
+        <th>category</th>
+      </thead>
+      <tbody class="datos"></tbody>
+    </table>
+    <div class="footer bg-light">
+      <div class="container fluid">
+        <h3>Made with ❤️ by Manuel Filgueira</h3>
       </div>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
